@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Twitter Player Card Video</title>
+
+  <!-- Twitter Player Card meta tags -->
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:site" content="@YourTwitterHandle" />
+  <meta name="twitter:title" content="Watch This Video!" />
+  <meta name="twitter:description" content="My custom self-hosted video on Twitter." />
+  <meta name="twitter:image" content="https://yourdomain.com/videos/thumbnail.jpg" />
+
+  <!-- VIDEO PLAYER URL -->
+  <meta name="twitter:player" content="https://yourdomain.com/videos/video1.html" />
+  <meta name="twitter:player:width" content="1280" />
+  <meta name="twitter:player:height" content="720" />
+
+  <!-- MP4 File -->
+  <meta name="twitter:player:stream" content="https://yourdomain.com/videos/video.mp4" />
+  <meta name="twitter:player:stream:content_type" content="video/mp4" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <video controls autoplay playsinline>
+    <source src="https://yourdomain.com/videos/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>
